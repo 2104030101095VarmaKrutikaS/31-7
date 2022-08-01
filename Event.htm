@@ -1,0 +1,52 @@
+<!DOCTYPE HTMl>
+<html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <title> krutika </title>
+    <body>
+        <button onclick="demoOnClick"> Click </button>
+        <button onclick="demoOnDblClick>" Duo Click </button>
+
+        <strong> Blur:
+            <input type="text" placeholder="Blur" onclick="demoOnBlur()">
+        </strong>
+
+        <i>
+            <strong>
+                Focus:
+                <input type="text" placeholder="Focus" onclick="demoOnFocus()">
+            </strong>
+        </i>
+        <em>
+            <strong>
+                Key Up :
+                <input type="text" placeholder="Key UP" onclick="demoOnKeyUp()">
+            </strong>
+        </em>
+        <h4>
+            <strong>
+                Key Press:
+                <input type="text" placeholder="Key Press" onclick="demoOnKeypress()">
+            </strong>
+        </h4>
+        <script>
+            function demoOnClick(){
+                 alert("On Click");
+            }
+            function demoOnDblClick(){
+                alert("On Duo Click");
+            }
+            function demoOnFocus(){
+                document.getElementById("Free").innerHTML = "Brown";
+            }
+            function demoOnBlur(){
+                document.getElementById("French").innerHTML = "Crimson";
+            }
+            function demoOnKeypress(){
+                alert("Keypress Done");
+            }
+            function demoOnKeyUp(){
+                alert("Key Up Done.");
+            }
+        </script>
+    </body>
+</html>
